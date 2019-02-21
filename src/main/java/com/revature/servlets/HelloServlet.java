@@ -34,6 +34,6 @@ public class HelloServlet extends DefaultServlet {
 	@Override
 	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		System.out.println("Request received!");
-		response.getWriter().write("Hello!");
+		response.getWriter().write("Hello!");s.dfnds.klfnSDK:LGFFDBJ
 	}
 }
