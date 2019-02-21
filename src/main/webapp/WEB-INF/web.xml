@@ -1,0 +1,35 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<!-- Is used to configure how requests should be routed
+		to servlets in our application -->
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <!-- Steps for configuring a servlet
+  		1. Declare the servlet
+  			a. Create a servet tag.
+  			b. Add servlet name
+  			c. Add servlet fully-qualified classpath
+  		2. Map the servlet to associated URL patterns 
+  			a. Create a servlet-mapping tag 
+  			b. Add servlet name matching step 1.
+  			c. Add url-pattern for matching urls.
+  			d. Repeat if there are more url patterns to match. 
+	-->
+  	
+  	<!-- Step 1 -->
+  	<servlet>
+  		<servlet-name>hello</servlet-name>
+  		<servlet-class>com.revature.servlets.HelloServlet</servlet-class>  	
+  	</servlet>
+  
+  
+  	<!--  Step 2 -->
+  	<servlet-mapping>
+  		<servlet-name>hello</servlet-name>
+  		<url-pattern>/*</url-pattern>
+  	</servlet-mapping>
+</web-app>
